@@ -286,7 +286,7 @@ def KoG2Padvanced(Sentence):
     runMorphemeCase = ["의", "히"]
 
     nInsertionFile = "./G2P/Dic/nSheetWords.csv"
-    nInsertionFr = open(nInsertionFile, 'r')
+    nInsertionFr = open(nInsertionFile, 'r', encoding='utf8')
     nInsertionContent = nInsertionFr.readlines()
     nInsertionFr.close()
 
@@ -377,7 +377,7 @@ def KoG2Padvanced(Sentence):
     hangulMo = ["ㅏ", "ㅑ", "ㅓ", "ㅕ", "ㅗ", "ㅛ", "ㅜ", "ㅠ", "ㅡ", "ㅣ", "ㅐ", "ㅘ", "ㅔ", "ㅙ", "ㅚ", "ㅝ", "ㅟ", "ㅞ", "ㅜ", "ㅢ",
                 "ㅒ", "ㅖ"]
 
-    fr = open(fileDir, 'r')
+    fr = open(fileDir, 'r', encoding='utf8')
     contents = fr.readlines()
     fr.close()
     KoG2PDic = dict()
